@@ -20,5 +20,4 @@ export class InfoService{
         return await this.infoRepo.save(newInfo);
     }
 
-   
 }
