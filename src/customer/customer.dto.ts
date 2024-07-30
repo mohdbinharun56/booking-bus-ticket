@@ -1,4 +1,4 @@
-import { IsString, IsDateString, IsNotEmpty} from 'class-validator';
+import { IsString, IsDateString, IsNotEmpty, MaxLength, IsNumber, Matches, IsMilitaryTime } from 'class-validator';
 
 export class InfoDTo {
     // @IsUUID()
@@ -20,8 +20,56 @@ export class InfoDTo {
     @IsNotEmpty()
     dateOfBirth: Date;
 
-    @IsString()
-    @IsNotEmpty()
+    // @IsString()
+    // @IsNotEmpty()
     profilePhoto: string;
 }
 
+export class CustoomerDTo {
+
+    // @IsUUID()
+    id: string;
+    
+    // @IsUUID()
+    infoId: string;
+
+    @IsNotEmpty()
+    login: {
+        email: string;
+        passHash: string;
+        roleUser: string;
+    };
+}
+
+
+export class FeedbackDTO {
+    @IsNotEmpty()
+    @MaxLength(50)
+    @IsString()
+    message: string;
+
+    @IsNotEmpty()
+    @IsNumber()
+    rating: number;
+
+    // customerid: string;
+}
+
+
+export class BookTicketDTO {
+
+    @IsNotEmpty()
+    seatNumberInBus: number;
+
+    @IsNotEmpty()
+    @IsString()
+    @Matches(/^(booked|pending)$/)
+    status: string;
+
+}
+
+export class ReportDTO{
+    @IsString()
+    // @Length(50)
+    message:string;
+}
