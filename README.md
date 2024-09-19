@@ -22,10 +22,86 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Title
+<h3>Bus Ticketing System</h3>
+
 ## Description
-
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<p>This project is a ticket booking system. There has 4 types of module/users such as Admin, Manager, Agent and Customer. Where customers can book tickets for bus. Admin, 
+manager and agent manage the system</p>
 
+## Feature Analysis
+  <ol>
+    <li>User Category</li>
+    <ul>
+      <li>Admin</li>
+      <li>Manager</li>
+      <li>Agent</li>
+      <li>Customer</li>
+    </ul>
+    <li>Feature List</li> 
+     <b><p>Customer</p></b>
+      <ul>
+        <li>CreateInfo</li>
+        <li> Register customer</li>
+        <li>get customer by id</li>
+        <li>Update Customer Info</li>
+        <li>Feedback and Ratings</li>
+        <li>Ticket view</li>
+        <li>Booked Ticket</li>
+        <li>Ticket History</li>
+        <li>Cancel Ticket</li>
+        <li>Ticket tracking / specific booked ticket</li>
+        <li>Check Notification</li>
+        <li>Report Customer</li>
+        <li>Login</li>
+        <li>Logout</li>
+      </ul>
+     <b><p>Manager</p></b>
+      <ul>
+        <li>create agent</li>
+        <li>update agent name</li>
+        <li>login users</li>
+        <li>get all customers</li>
+        <li>update customer</li>
+        <li>delete customer</li>
+        <li>delete agent</li>
+        <li>Create bus</li>
+        <li>update bus number</li>
+        <li>View all buses</li>
+        <li>update manager info</li>
+        <li>update password</li>
+        <li>view all agent</li>
+        <li>view all tickets</li>
+      </ul>
+      <b><p>Agent</p></b>
+      <ul>
+        <li>create ticket</li>
+        <li>update ticket</li>
+        <li>delete ticket</li>
+        <li>monitor customers</li>
+        <li>monitor ticket book infor</li>
+        <li>bus update</li>
+        <li>bus delete</li>
+        <li>bus create</li>
+        <li>notification create</li>
+        <li> notification update</li>
+        <li>notification delete</li>
+        <li>agent profile update</li>
+      </ul>
+    
+  </ol>
+
+## Backend Development Tools:
+- NestJs
+- NodeJs
+- TypeScript
+- TypeORM
+# Database:
+- PostgreSQL
+- pgAdmin
+# API Tools
+- Postman
 ## Installation
 
 ```bash
