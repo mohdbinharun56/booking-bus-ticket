@@ -1,7 +1,7 @@
 import { Controller, HttpCode, HttpStatus, Post, Body, UnauthorizedException, Session } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { SignInDTO } from "../login/signin.dto";
-import session from "express-session";
+// import session from "express-session";
 // import session from "express-session";
 
 @Controller('auth')

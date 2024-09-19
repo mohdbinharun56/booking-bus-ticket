@@ -88,9 +88,11 @@ import { CustomerModule } from './customer/customer.module';
 import { JwtModule } from '@nestjs/jwt';
 import { LoginModule } from './customer/login/login.module';
 import { AuthModule } from './customer/auth/auth.module';
+import { ManagerModule } from './manager/manager.module';
+import { AgentModule } from './agent/agent_information/agent.module';
 
 @Module({
-  imports: [CustomerModule,InfoModule,LoginModule,JwtModule,TypeOrmModule.forRoot({
+  imports: [ManagerModule,AgentModule,CustomerModule,InfoModule,LoginModule,JwtModule,TypeOrmModule.forRoot({
     type: 'postgres',
     host: 'localhost',
     port: 5432,
